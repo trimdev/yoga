@@ -7,25 +7,25 @@
 <meta name="description" content="Nyolc nap jóga, csend és dzsungel Ubud felett. Bali jógatábor Horváth Éva vezetésével, 2026. október 24–31. Legfeljebb 14 résztvevő.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hero.jpg">
 <style>
 :root{
-  --ink:#16201a; --jungle:#1f2d24; --moss:#4f5f45; --sand:#f1e9dc; --paper:#f7f2ea; --clay:#c2633a; --sun:#e9a35b; --mute:#6f6a60;
+  --ink:#16201a; --jungle:#1f2d24; --moss:#4f5f45; --sand:#f1e9dc; --paper:#f7f2ea; --clay:#c2633a; --sun:#e9a35b; --mute:#5c574e;
   --line:color-mix(in oklab,var(--ink) 16%,transparent);
-  --serif:"Bodoni Moda",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
+  --serif:"Newsreader",Georgia,serif; --sans:"Newsreader",Georgia,serif;
   --spring:cubic-bezier(.23,1,.32,1); --ease:cubic-bezier(.16,1,.3,1);
   --gut:clamp(16px,4vw,56px); --s1:8px; --s2:16px; --s3:24px; --s4:40px; --s5:72px; --s6:clamp(96px,14vw,184px);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--paper);color:var(--ink);font:400 18px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
 ::selection{background:var(--clay);color:var(--paper)}
 .wrap{padding-inline:var(--gut);max-width:1440px;margin-inline:auto}
 .serif{font-family:var(--serif);font-weight:400;letter-spacing:-.03em;line-height:1}
-.kicker{font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
+.kicker{font:600 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--clay)}
 em{font-style:italic}
 
 /* grain */
@@ -33,7 +33,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;gap:12px;font:600 14px/1 var(--sans);letter-spacing:.06em;text-decoration:none;padding:18px 28px;border:1px solid currentColor;color:var(--paper);background:transparent;cursor:pointer;transition:transform .5s var(--spring),background-color .3s,color .3s}
+.btn{display:inline-flex;align-items:center;gap:12px;font:600 16px/1 var(--sans);letter-spacing:.02em;text-decoration:none;padding:18px 28px;border:1px solid currentColor;color:var(--paper);background:transparent;cursor:pointer;transition:transform .5s var(--spring),background-color .3s,color .3s}
 .btn--solid{background:var(--clay);border-color:var(--clay)}
 .btn:hover{transform:translateY(-3px)}
 .btn--solid:hover{background:#ad5430}
@@ -52,7 +52,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
 .hdr>*{position:relative}
 .logo{font:500 22px/1 var(--serif);letter-spacing:-.02em;text-decoration:none}
 .logo i{font-size:13px;font-family:var(--sans);font-style:normal;letter-spacing:.2em;text-transform:uppercase;margin-left:10px;opacity:.7}
-.nav{display:flex;gap:32px;font-size:14px}
+.nav{display:flex;gap:32px;font-size:16px}
 .nav a{text-decoration:none;position:relative;padding:4px 0}
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
 .nav a:hover::after{transform:scaleX(1);transform-origin:left}
@@ -104,7 +104,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
 .facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:var(--s5);border-top:1px solid var(--line)}
 .facts div{padding:var(--s3) var(--s3) 0 0}
 .facts b{display:block;font:400 clamp(44px,5vw,80px)/1 var(--serif);letter-spacing:-.04em}
-.facts span{font-size:14px;color:var(--mute)}
+.facts span{font-size:16px;color:var(--mute)}
 @media (max-width:760px){.facts{grid-template-columns:1fr 1fr;row-gap:var(--s4)}}
 
 /* split image band */
@@ -112,7 +112,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
 .band figure:first-child .mask{aspect-ratio:4/5}
 .band figure:last-child .mask{aspect-ratio:3/2}
 .band img{width:100%;height:100%;object-fit:cover}
-.cap{font-size:13px;color:var(--mute);margin-top:12px}
+.cap{font-size:15px;color:var(--mute);margin-top:12px}
 @media (max-width:760px){.band{grid-template-columns:1fr}}
 
 /* day / sun arc */
@@ -224,7 +224,7 @@ details p{padding:0 0 var(--s3);color:var(--mute);max-width:62ch}
 form{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3) var(--s3)}
 .f{display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
 .f.wide{grid-column:1/-1}
-.f input,.f select,.f textarea{font:400 17px/1.4 var(--sans);letter-spacing:0;text-transform:none;color:var(--paper);background:transparent;border:0;border-bottom:1px solid rgba(247,242,234,.4);padding:10px 0;border-radius:0;transition:border-color .3s}
+.f input,.f select,.f textarea{font:400 18px/1.4 var(--sans);letter-spacing:0;text-transform:none;color:var(--paper);background:transparent;border:0;border-bottom:1px solid rgba(247,242,234,.4);padding:10px 0;min-height:46px;border-radius:0;transition:border-color .3s}
 .f select option{color:var(--ink)}
 .f input:hover,.f select:hover,.f textarea:hover{border-color:var(--paper)}
 .f textarea{resize:vertical;min-height:90px}
@@ -234,8 +234,8 @@ form.sent>*:not(.thanks){display:none}
 form.sent .thanks{display:block}
 .mark{position:relative;z-index:2;font:400 clamp(90px,24vw,400px)/.8 var(--serif);letter-spacing:-.06em;text-align:center;white-space:nowrap;padding-top:var(--s4);transform:translateY(8%)}
 .mark span{display:inline-block}
-.foot{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);padding-block:var(--s3);border-top:1px solid rgba(247,242,234,.2);font-size:12px;opacity:.7}
-.foot a{text-decoration:none;display:inline-block;padding:12px 0;margin:-12px 0}
+.foot{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);padding-block:var(--s3);border-top:1px solid rgba(247,242,234,.2);font-size:14px;opacity:.7}
+.foot a{text-decoration:none;display:inline-block;padding:14px 0;margin:-14px 0}
 .foot a:hover{text-decoration:underline}
 @media (max-width:860px){.apply__in{grid-template-columns:1fr}form{grid-template-columns:1fr}}
 
